@@ -3,7 +3,7 @@
     <ul>
         @foreach (App\Models\Client::all() as $client)
             <li>
-                {{ ($this->editAction)(['client' => $client->id]) }}
+                {{ ($this->edit)(['client' => $client->id]) }}
                 {{ $client->name }}
             </li>            
         @endforeach
